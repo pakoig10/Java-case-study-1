@@ -16,8 +16,7 @@ public class Product {
         this.productId = idCounter;
         this.name = name;
         this.type = type;
-        this.quantity = 0;
-        this.price = 0;
+        this.assignQuantityPrice();
         idCount();
     }
 

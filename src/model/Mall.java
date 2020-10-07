@@ -16,13 +16,6 @@ public class Mall {
         this.name = name;
         this.stores = new ArrayList();
         this.stores.addAll(stores);
-        for (Store store: this.stores) {
-            System.out.println(store.name);
-            for (Product product : store.products) {
-                product.assignQuantityPrice();
-                //System.out.println(product.name + " " + product.quantity + " " + product.price);
-            }
-        }
         idCount();
     }
 
@@ -46,9 +39,7 @@ public class Mall {
                             System.out.println("Location: " + store.location);
                             break;
                         case 4:
-                            System.out.println("Store name: " + store.name);
-                            System.out.println("Price: $" + product.price);
-                            break;
+                            System.out.println(store.name + " Price: $" + product.price); break;
                     }
                     searchCounter++;
                 }
